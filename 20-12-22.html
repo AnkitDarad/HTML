@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .x:hover{
+            color: aqua;
+        }
+        input:focus{
+            border: 4px double red;
+            background-color: aqua;
+        }
+        input::placeholder{
+            color: blue;
+        }
+        input{
+            padding-left: 5px;
+            outline: 0;
+            border-radius: 20px;
+            border: 1px solid black;
+        }
+        .outer-div{
+            display: flex;
+            margin-top: 20px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px;
+            flex-direction: row-reverse;
+        }
+        .inner-div{
+            width: 200px;
+            height: 200px;
+            background-color:aqua;
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #a{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 class="x">H1</h1>
+    <input type="text" placeholder="Name">
+
+    
+    <div class="outer-div">
+        <div class="inner-div">1</div>
+        <div class="inner-div">2</div>
+        <div class="inner-div">3</div>
+        <div class="inner-div">4</div>
+        <div id="a" class="inner-div">5</div>
+        <div class="inner-div">6</div>
+        <div class="inner-div">7</div>
+        <div class="inner-div">8</div>
+        <div class="inner-div">9</div>
+        <div class="inner-div">10</div>
+    </div>
+    
+</body>
+</html>
